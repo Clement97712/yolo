@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Programme</title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+            
+            //Element Js
+          function choixPays(valeur){
+            document.getElementById("image").src=valeur;
+            document.getElementById("image").style.width="4cm";
+            document.getElementById("image").style.height="2.5cm";
+            document.getElementById("image").style.margin="1cm";
+          }
+          function choix(valeur){
+            document.getElementById("images").src=valeur;
+            document.getElementById("images").style.width="4cm";
+            document.getElementById("images").style.height="2.5cm";
+            document.getElementById("images").style.margin="1cm";
+          }
+          
+          
+          
+            
+            
+            
+        </script> 
+    </head>
+    <body>
+        <label for="select">Selection du pays: </label>
+        <select id="select" onchange="choixPays(value);">
+            <option value="image/ad.png">Andorre</option>
+            <option value="image/fr.png">France</option>
+            <option value="image/br.png">Bresil</option>
+            <option value="image/ar.png" selected="selected">Argentine</option>
+            <option value="image/es.png">Espagne</option>
+            <option value="image/de.png">Allemagne</option>
+            <option value="image/us.png">Etat-Unis</option>
+        </select>
+        <br/>
+        <br/>
+         <label for="select">Selection du pays: </label>
+        <select id="select" onchange="choix(value);">
+            <option value="image/ad.png">Andorre</option>
+            <option value="image/fr.png">France</option>
+            <option value="image/br.png">Bresil</option>
+            <option value="image/ar.png" selected="selected">Argentine</option>
+            <option value="image/es.png">Espagne</option>
+            <option value="image/de.png">Allemagne</option>
+            <option value="image/us.png">Etat-Unis</option>
+        </select>
+        
+        
+        <div id="boite">
+            <img src="" id="image"/>
+        </div>
+        <br/>
+        <div id="boite">
+            <img src="" id="images"/>
+        </div>
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
